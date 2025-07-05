@@ -4,7 +4,7 @@ import re
 # File paths (replace with your actual paths)
 CLEANED_PATH = 'cleaned.csv'
 HOPS_PATH = 'hops.csv'
-OUTPUT_PATH = 'verisign.csv'
+OUTPUT_PATH = 'patched.csv'
 
 # Load cleaned.csv
 with open(CLEANED_PATH, newline='', encoding='utf-8') as f1:
@@ -107,4 +107,4 @@ with open(OUTPUT_PATH, 'w', newline='', encoding='utf-8') as fout:
     writer = csv.writer(fout)
     writer.writerows(hops_data)
 
-print("Saved to verisign.csv")
+print("Saved to patched.csv")
